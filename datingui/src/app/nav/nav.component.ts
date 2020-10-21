@@ -25,9 +25,7 @@ model:any = {}
     this.accountService.login(this.model).subscribe(response=> {
       console.log(response);
       this.router.navigate(['/members']);
-    },error => {
-      console.log(error)
-      this.toastr.error(error.error);
+    
     });
   }
   
