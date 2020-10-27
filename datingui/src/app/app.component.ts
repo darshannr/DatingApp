@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   title = 'Dating App';
   constructor(private accountService:AccountService){}
   users:any;
+  
 
   ngOnInit() {
     this.setCurrentUser();
